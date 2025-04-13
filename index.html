@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emissão de passaporte</title>
+  <title>Document</title>
 </head>
 <body>
-  <img src="https://www.gov.br/pf/pt-br/principios-fundamentais/simbolos-da-policia-federal-2/emblema.png/@@images/25e65fb1-ab25-409e-b13a-8d1270ab7cbf.png" alt="logo">
   <div class="cabecalho">
-  <h1>Divisão de passaporte</h1>
+  <img src="https://www.gov.br/pf/pt-br/principios-fundamentais/simbolos-da-policia-federal-2/emblema.png/@@images/25e65fb1-ab25-409e-b13a-8d1270ab7cbf.png" width="90" height="auto" alt="logo">
+  <h1 style="font-size: 24px;">Divisão de passaporte</h1>
   <h3>coordenação geral da policia</h3>
   </div>
     <div class="menu">
@@ -27,89 +27,129 @@
       <button>Dados complementares</button>
       <button>Revisar dados</button>
       </div>
+<div class="conteúdo">
     <div class="page-info">
       <h3>Dados pessoais</h3>
       </div>
-    <div class="nome">
-      <label for="nome">Nome completo</label>
-      <input type="text" placeholder ="Digite aqui">
-    </div>
-    <div class="sexo">
-      <label for="sexo">sexo</label>
-      <select id="sexo" name="sexo">
-         <option value="">Selecione</option>
-         <option value="feminino">Feminino</option>
-         <option value="masculino">Masculino</option>
-         <option value="nao-informar">Outro</option>
-         <option value="outro">Prefiro não informar</option>
-      </select>
-      </div>
-      <div class="filiacao1">
-        <label for="filiacao1">Filiação 1</label>
-        <input type="text" placeholder ="Digite aqui">
-      </div>
-      <div class="sexo2">
-        <label for="sexo">sexo</label>
-        <select id="sexo" name="sexo">
-         <option value="">Selecione</option>
-         <option value="feminino">Feminino</option>
-         <option value="masculino">Masculino</option>
-         <option value="nao-informar">Outro</option>
-         <option value="outro">Prefiro não informar</option>
-      </select>
-      </div>
-        <div class="filiacao2">
-        <label for="filiacao2">Filiação 2</label>
-        <input type="text" placeholder ="Digite aqui">
-      </div>
-      <div class="sexo3">
-        <label for="sexo">sexo</label>
-        <select id="sexo" name="sexo">
-         <option value="">Selecione</option>
-         <option value="feminino">Feminino</option>
-         <option value="masculino">Masculino</option>
-         <option value="nao-informar">Outro</option>
-         <option value="outro">Prefiro não informar</option>
-      </select>
-      </div>
-       <div class="nascimento">
-        <label for="nascimento">Data de nascimento</label>
-        <input type="text" placeholder ="Digite aqui">
-      </div>
-      <div class="caixinhas">
-     <label>
-     <input type="radio" name="aceite" value="sim">Emancipado
-     </label>
 
-     <label>
-     <input type="radio" name="aceite" value="nao">Adoção internacional
-     </label>
-     </div>
-     <div class="nacao">
-        <label for="nacao">Nacionalidade</label>
-        <select id="nacao" name="nacao">
-         <option value="init">Brasil</option>
-         <option value="another">Outro</option>
-         </select>
-      </div>  
+       <div class="linha">
+       <div class="campo">
+    <label for="nome">Nome completo</label>
+    <input type="text" placeholder="Digite aqui">
+  </div>
 
-    <div class="page-info2">
+  <div class="campo">
+    <label for="sexo">Sexo</label>
+    <select id="sexo">
+      <option value="">Selecione</option>
+      <option value="feminino">Feminino</option>
+      <option value="masculino">Masculino</option>
+      <option value="outro">Outro</option>
+    </select>
+  </div>
+  </div>
+
+<div class="linha">
+  <div class="campo">
+    <label for="filiacao1">Filiação 1</label>
+    <input type="text" placeholder="Digite aqui">
+  </div>
+
+   <div class="campo">
+    <label for="sexo">Sexo</label>
+    <select id="sexo">
+      <option value="">Selecione</option>
+      <option value="feminino">Feminino</option>
+      <option value="masculino">Masculino</option>
+      <option value="outro">Outro</option>
+    </select>
+  </div>
+  </div>
+
+<div class="linha">
+  <div class="campo">
+    <label for="filiacao2">Filiação 2</label>
+    <input type="text" placeholder="Digite aqui">
+  </div>
+
+   <div class="campo">
+    <label for="sexo">Sexo</label>
+    <select id="sexo">
+      <option value="">Selecione</option>
+      <option value="feminino">Feminino</option>
+      <option value="masculino">Masculino</option>
+      <option value="outro">Outro</option>
+    </select>
+  </div>
+  </div>
+
+
+<div class="linha">
+  <div class="campo">
+    <label for="nascimento">Data de nascimento</label>
+    <input type="date">
+  </div>
+
+  <div class="caixinhas">
+  <label class="checkbox-custom">
+  <input type="checkbox" name="aceite" value="emancipado">
+  <span class="checkmark"></span>
+  <span class="texto">Emancipado</span>
+</label>
+
+  <label>
+    <input type="checkbox" name="aceite" value="adocao"> Adoção internacional
+  </label>
+</div>
+</div>
+
+
+<div class="linha">
+  <div class="campo">
+    <label for="raca">Raça ou cor</label>
+    <select id="raca">
+      <option value="">Selecione</option>
+      <option value="branco">Branco</option>
+      <option value="pardo">Pardo</option>
+      <option value="preto">Preto</option>
+      <option value="preto">Indígena</option>
+    </select>
+  </div>
+
+  <div class="campo">
+    <label for="estado">Estado civil</label>
+    <select id="estado">
+      <option value="">Selecione</option>
+      <option value="CE">Solteiro</option>
+      <option value="CE">Casado</option>
+      <option value="CE">Divorciado</option>
+    </select>
+  </div>
+
+  <div class="campo">
+    <label for="cidade">Nacionalidade</label>
+    <select id="cidade">
+      <option value="">Selecione</option>
+      <option value="Fortaleza">Brasil</option>
+    </select>
+  </div>
+</div>
+
+
+   <div class="page-info2">
       <h3>Local de nascimento</h3>
       </div>
-      <div class="nacao2">
+
+
+  <div class="linha">
+    <div class="nacao2">
         <label for="nacao2">País</label>
         <select id="nacao2" name="nacao2">
          <option value="">Brasil</option>
          <option value="another">Outro</option>
          </select>
       </div>
-       <div class="cidade">
-        <label for="cidade">Cidade</label>
-        <select id="cidade" name="cidade">
-         <option value="">Selecione</option>
-         <option value="another">Fortaleza</option>
-         </select>
-      </div>
+
          <div class="estado">
         <label for="estado">UF</label>
         <select id="estado" name="estado">
@@ -117,12 +157,23 @@
          <option value="another">Ceará</option>
          </select>
       </div>
+    </div>
 
-         <div class="page-info3">
+      <div class="cidade">
+        <label for="cidade">Cidade</label>
+        <select id="cidade" name="cidade">
+         <option value="">Selecione</option>
+         <option value="another">Fortaleza</option>
+         </select>
+      </div>
+
+        <div class="page-info3">
           <h3>Nomes anteriores</h3>
           </div>
             <p>Para cada nome anterior, digite o nome, escolha o motivo da mudança e clique em adicionar</p>
-          <div class="nomeantes">
+
+
+<div class="nomeantes">
             <label for="nomeantes">Nome anterior</label>
             <input type="text" placeholder ="Digite aqui">
            </div>
@@ -133,8 +184,10 @@
                   <option value="uhh">Não sei</option>
                 </select>
             </div>
+
+            
         <div class="final">
          <button>Próximo</button>
           </div>
-</body>
-</html>
+
+</div>
