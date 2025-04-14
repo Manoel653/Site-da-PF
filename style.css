@@ -88,9 +88,8 @@ overflow: hidden;
   background: none;
   border: none;
   color: rgba(22, 22, 22, 0.904);
-  font-size: 18px;
+  font-size: 23px;
   cursor: pointer;
-  
   padding: 15px 20px;
 }
 
@@ -101,14 +100,15 @@ overflow: hidden;
 .page-options {
   align-items: center;
 background: rgba(116, 93, 168, 0.815);
-padding: 10px 200px;
+padding: 10px 20px;
 height: 95px;
 box-shadow: 5px 5px 10px; color: rgba(0, 0, 0, 0.418);
-flex-direction: column;
 position: relative;
 overflow: hidden;
 margin: 0 auto;
 width: 100%;
+display: flex;
+justify-content: center;
 }
 
 .conteúdo {
